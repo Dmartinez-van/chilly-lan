@@ -2,7 +2,7 @@ import React from 'react'
 import MaxWidthWrapper from './MaxWidthWrapper'
 import Link from 'next/link'
 // import { Icons } from './Icons'
-// import NavItems from './NavItems'
+import NavItems from './NavItems'
 import { buttonVariants } from './ui/button'
 // import { getServerSideUser } from '@/lib/payload-utils'
 import { cookies } from 'next/headers'
@@ -32,7 +32,7 @@ const Navbar = async () => {
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  {user ? null : (
+                  {/* {user ? null : (
                     <Link
                       href={'/sign-in'}
                       className={buttonVariants({
@@ -41,13 +41,13 @@ const Navbar = async () => {
                     >
                       Sign in
                     </Link>
-                  )}
+                  )} */}
 
-                  {user ? null : (
+                  {/* {user ? null : (
                     <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  )}
+                  )} */}
 
-                  {user ? (
+                  {/* {user ? (
                     <UserAccountNav user={user} />
                   ) : (
                     <Link
@@ -58,24 +58,22 @@ const Navbar = async () => {
                     >
                       Create Account
                     </Link>
-                  )}
+                  )} */}
 
-                  {user ? (
+                  {/* {user ? (
                     <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  ) : null}
+                  ) : null} */}
 
-                  {user ? null : (
+                  {/* {user ? null : (
                     <div className="flex lg:ml-6">
                       <span
                         className="h-6 w-px bg-gray-200"
                         aria-hidden="true"
                       />
                     </div>
-                  )}
+                  )} */}
 
-                  <div className="ml-4 flow-root lg:ml-6">
-                    <Cart />
-                  </div>
+                  <div className="ml-4 flow-root lg:ml-6">{/* <Cart /> */}</div>
                 </div>
               </div>
             </div>

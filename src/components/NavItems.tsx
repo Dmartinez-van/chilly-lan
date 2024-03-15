@@ -31,7 +31,7 @@ const NavItems = () => {
 
   return (
     <div ref={navRef} className="flex gap-4 h-full">
-      {PRODUCT_CATEGORIES.map((category, i) => {
+      {/* {PRODUCT_CATEGORIES.map((category, i) => {
         const handleOpen = () => {
           if (activeIndex === i) {
             setActiveIndex(null)
@@ -51,7 +51,7 @@ const NavItems = () => {
             isAnyOpen={isAnyOpen}
           />
         )
-      })}
+      })} */}
     </div>
   )
 }
